@@ -1,14 +1,15 @@
 {
-  "name": "mongo-http-errors",
+  "name": "koa-mongo-error",
   "version": "1.0.0",
-  "description": "Convert some mongo errrors to HTTP errors",
+  "description": "Convert a mongo error in to an HTTP error.",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dougmoscrop/mongo-http-errors.git"
+    "url": "git+https://github.com/dougmoscrop/koa-mongo-error.git"
   },
   "keywords": [
     "mongo",
@@ -17,11 +18,11 @@
   ],
   "author": "Doug Moscrop <doug.moscrop@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dougmoscrop/mongo-http-errors/issues"
-  },
-  "homepage": "https://github.com/dougmoscrop/mongo-http-errors#readme",
+  "homepage": "https://github.com/dougmoscrop/koa-mongo-error#readme",
   "dependencies": {
     "http-errors": "^1.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^1.6.0"
   }
 }

@@ -1,15 +1,13 @@
-# mongo-http-errors
+# koa-mongo-error
 
 ## usage
 
 ```javascript
-var mongoHttpErrors = require('mongo-http-errors');
+var mongoError = require('koa-mongo-error');
 
-app.use(function(req, res) {
+app.use(error()); // koa-error
+app.use(mongoError())); // translates some errors to http-errors
+app.use(function* () {
   // do something with mongo
 });
-
-app.use(log.errors());
-app.use(mongoHttpErrors()); // translates some errors to http-errors
-app.use(errorHandler());
 ```
